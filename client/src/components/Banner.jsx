@@ -7,7 +7,7 @@ function Banner({fetchUrl}) {
     useEffect(() => {
         async function fetchData() {
             const result = await axios.get(fetchUrl)
-            setMovie(result.data.results[Math.floor(Math.random() * result.data.results.length) +1])
+            setMovie(result.data.results[Math.floor(Math.random() * result.data.results.length)])
         }
         fetchData()
     }, [fetchUrl])
@@ -26,7 +26,7 @@ function Banner({fetchUrl}) {
                   <h1 className="banner__title">{movie?.name || movie?.title || movie?.original_name}</h1>
                   <p className="banner__description">{truncate(movie?.overview,190)}</p>
                   </div>
-                  {/* <div className="banner--fade"></div> */}
+                  <div className="banner--fade"></div>
         </header>
     )
 }
