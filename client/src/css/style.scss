@@ -1,0 +1,11 @@
+@import "./row";
+@import "./banner";
+
+body {
+      min-height: 100%;
+}
+.app {
+      background-color: #121212;
+      color: #f7ebec;
+      height: 100%;
+}

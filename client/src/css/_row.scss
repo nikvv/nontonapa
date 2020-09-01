@@ -1,0 +1,35 @@
+@import "./variables";
+.row {
+      // margin: 2vw 0;
+      padding: 1vw 1vw;
+}
+
+.row__poster {
+      object-fit: contain;
+      width: 100%;
+      max-height: 12rem;
+      margin-right: 0.7rem;
+      cursor: pointer;
+      transition: transform 350ms;
+      &:hover {
+            transform: scale(1.07);
+      }
+}
+
+.row__title {
+      font-size: 1.4vw;
+      font-family: "Montserrat", sans-serif;
+      @media (max-width: $mobile) {
+            font-size: 12px;
+      }
+}
+
+.row__posters {
+      display: flex;
+      padding: 0.5rem;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+            display: none;
+      }
+}
