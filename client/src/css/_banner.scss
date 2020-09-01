@@ -5,10 +5,11 @@
       background-size: cover;
       background-position: center center;
       object-fit: contain;
-      width: 100%;
+      max-width: 1600px;
+      margin: auto;
       height: 50vw;
       @media (min-width: $widescreen) {
-            height: 30vw;
+            height: 35vw;
       }
 }
 
@@ -35,6 +36,9 @@
 }
 
 .banner--fade {
-      height: 6rem;
+      height: 28vw;
       background-image: linear-gradient(180deg, transparent, rgba(24, 24, 24, 0.6), #121212);
+      @media (min-width: $widescreen) {
+            height: 16vw;
+      }
 }

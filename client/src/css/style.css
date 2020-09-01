@@ -1,5 +1,5 @@
 .row {
-  padding: 1vw 1vw;
+  padding: 2vw 1vw;
 }
 
 .row__poster {
@@ -9,15 +9,21 @@
   max-height: 12rem;
   margin-right: 0.7rem;
   cursor: pointer;
-  -webkit-transition: -webkit-transform 350ms;
-  transition: -webkit-transform 350ms;
-  transition: transform 350ms;
-  transition: transform 350ms, -webkit-transform 350ms;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
 }
 
 .row__poster:hover {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
+}
+
+@media (min-width: 1024px) {
+  .row__poster {
+    max-height: 14rem;
+  }
 }
 
 .row__title {
@@ -50,13 +56,14 @@
   background-position: center center;
   -o-object-fit: contain;
      object-fit: contain;
-  width: 100%;
+  max-width: 1600px;
+  margin: auto;
   height: 50vw;
 }
 
 @media (min-width: 1216px) {
   .banner {
-    height: 30vw;
+    height: 35vw;
   }
 }
 
@@ -86,9 +93,15 @@
 }
 
 .banner--fade {
-  height: 6rem;
+  height: 28vw;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(24, 24, 24, 0.6)), to(#121212));
   background-image: linear-gradient(180deg, transparent, rgba(24, 24, 24, 0.6), #121212);
+}
+
+@media (min-width: 1216px) {
+  .banner--fade {
+    height: 16vw;
+  }
 }
 
 body {
