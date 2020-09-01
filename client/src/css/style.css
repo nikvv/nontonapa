@@ -3,8 +3,7 @@
 }
 
 .row__poster {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 100%;
   max-height: 12rem;
   margin-right: 0.7rem;
@@ -17,7 +16,7 @@
 
 .row__poster:hover {
   -webkit-transform: scale(1.07);
-          transform: scale(1.07);
+  transform: scale(1.07);
 }
 
 @media (min-width: 1024px) {
@@ -55,7 +54,7 @@
   background-size: cover;
   background-position: center center;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-width: 1600px;
   margin: auto;
   height: 50vw;
@@ -113,4 +112,5 @@ body {
   color: #f7ebec;
   height: 100%;
 }
+
 /*# sourceMappingURL=style.css.map */
