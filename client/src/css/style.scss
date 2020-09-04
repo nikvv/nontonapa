@@ -1,11 +1,13 @@
 @import "./row";
 @import "./banner";
+@import "./footer";
+@import "./variables";
 
 body {
       min-height: 100%;
 }
 .app {
-      background-color: #121212;
-      color: #f7ebec;
+      background-color: $background;
+      color: $textColor;
       height: 100%;
 }
