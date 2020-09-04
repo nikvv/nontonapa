@@ -21,7 +21,7 @@ function Banner({fetchUrl}) {
           
         <header
             className="banner"
-            style={{backgroundImage: `url(${baseUrl}/${movie?.backdrop_path})`}}>
+            style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(${baseUrl}/${movie?.backdrop_path})`}}>
             <div className="banner__contents">
                   <h1 className="banner__title">{movie?.name || movie?.title || movie?.original_name}</h1>
                   <p className="banner__description">{truncate(movie?.overview,190)}</p>
