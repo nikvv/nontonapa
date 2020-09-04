@@ -9,8 +9,9 @@ import './css/style.css'
 function App() {
   return (
     <div className="app">
-      {/* <h1 className="font-brand text-3xl">NONTONAPA</h1> */}
+
       <Banner fetchUrl={fetch.netflixOriginals} />
+
       <Row title='Netflix Originals' fetchUrl={fetch.netflixOriginals} />
       <Row title='Trending Movie' fetchUrl={fetch.trendingMovie} />
       <Row title='Trending TV' fetchUrl={fetch.trendingTv} />
