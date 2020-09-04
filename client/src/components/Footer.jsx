@@ -4,7 +4,7 @@ function Footer() {
       return (
             <footer className="footer">
                   <div>
-                  <p>Created with blood, sweat and tears of @nickovalentino</p>
+                  <p className="footer__createdBy">Created with blood, sweat and tears of <a href="https://github.com/nikvv" target="_blank" rel="noopener noreferrer">@nickovalentino</a></p>
                   </div>
             </footer>
       )
