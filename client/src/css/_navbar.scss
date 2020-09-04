@@ -1,6 +1,23 @@
 @import "./variables";
+.navbar {
+      font-family: "Unna", serif;
+      color: $text-navbar;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      padding: 0.5em 1em;
+      transition: all 0.7s;
+}
+.navbar__brand {
+      font-size: 1.3em;
+      font-weight: bold;
+      cursor: pointer;
+      @media (min-width: $tablet) {
+            font-size: 2.5em;
+      }
+}
 
-.footer {
-      background-color: $backgroundColor;
-      padding: 1rem 1.5rem;
+.navbar__bg {
+      background-color: $background-navbar;
 }
