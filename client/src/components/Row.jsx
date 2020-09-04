@@ -10,10 +10,14 @@ function Row({title,fetchUrl}) {
 
       const handleClick = (movie) => {
           if(detail) {
-              setDetail(null)
+              if(detail.id === movie.id){
+                  setDetail(null)
+              } else {
+                setDetail(movie)
+            }
           } else {
-              setDetail(movie)
-          }
+            setDetail(movie)
+        }
       }
       useEffect(() => {
             async function fetchData() {
